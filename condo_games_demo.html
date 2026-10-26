@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<title>Condo Games — Private Servers</title>
+<style>
+:root{--bg:#0c0c0d;--panel:#19191b;--muted:#a5a5aa;--red:#ed2019;--green:#21c997}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#f7f7f8;font-family:Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:3;background:#101011;border-bottom:1px solid #242426;padding:16px;display:flex;align-items:center;gap:12px}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--red);display:grid;place-items:center;font-size:25px;font-weight:900;transform:rotate(-8deg)}
+.logo span{transform:rotate(8deg)}
+.brand{font-size:21px;font-weight:800;letter-spacing:.3px}
+main{max-width:720px;margin:auto;padding:16px}
+.hero,.server{background:var(--panel);border:1px solid #29292c;border-radius:24px;overflow:hidden;margin-bottom:24px;box-shadow:0 10px 25px #0005}
+.hero-media{height:220px;position:relative;overflow:hidden;background:radial-gradient(circle at 70% 35%,#c8b2ff 0 5%,transparent 20%),linear-gradient(130deg,#102e47,#33314a 48%,#19191b)}
+.hero-media video{width:100%;height:100%;object-fit:cover;display:block}
+.hero-media .overlay{position:absolute;inset:0;background:linear-gradient(0deg,#0009,transparent 65%);pointer-events:none}
+.creator{position:absolute;left:18px;bottom:18px;border-radius:30px;padding:9px 14px;background:#111d;color:white;font-weight:700;display:flex;align-items:center;gap:10px}
+.avatar{width:36px;height:36px;border:2px solid var(--red);border-radius:50%;display:grid;place-items:center;background:#242428}
+.hero-copy{padding:20px 22px 24px}
+h1{font-size:24px;margin:0 0 8px}
+.sub{color:var(--muted);font-size:16px;line-height:1.45;margin:0}
+.section-title{display:flex;justify-content:space-between;align-items:center;gap:10px;margin:28px 4px 18px}
+.section-title h2{font-size:21px;margin:0}
+.count{font-size:14px;color:var(--muted);white-space:nowrap}
+.server-art{height:190px;position:relative;overflow:hidden;background:linear-gradient(135deg,#202b3e,#39304b 45%,#111)}
+.art-two{background:linear-gradient(135deg,#260c15,#6e171e 50%,#17171b)}
+.scene{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 85%,#8c70ff55,transparent 45%),linear-gradient(160deg,transparent 50%,#0007 51%)}
+.server-art:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#0005,transparent 70%)}
+.status{position:absolute;z-index:1;right:14px;top:14px;background:#145443;color:#57e0b5;border:1px solid #287f68;border-radius:30px;padding:8px 13px;font-size:12px;font-weight:800;letter-spacing:.4px}
+.server-info{padding:20px}
+.server-info h3{font-size:22px;margin:0 0 14px}
+.online{display:flex;align-items:center;gap:12px;color:var(--muted);margin-bottom:20px}
+.avatars{display:flex}
+.avatars span{width:39px;height:39px;border-radius:50%;display:grid;place-items:center;margin-right:-7px;background:#29292d;border:2px solid var(--red);font-size:19px}
+.join{width:100%;border:0;border-radius:15px;background:var(--red);color:white;padding:17px 12px;font-size:16px;font-weight:900;letter-spacing:.4px;box-shadow:0 5px 15px #ed201933;cursor:pointer}
+.join:active{transform:scale(.99)}
+.note{font-size:12px;color:#85858b;line-height:1.5;text-align:center;padding:4px 10px 24px}
+</style>
+</head>
+<body>
+<header><div class="logo"><span>⬡</span></div><div class="brand">CONDO GAMES</div></header>
+<main>
+  <section class="hero">
+    <div class="hero-media">
+      <!-- Letakkan video pendek milikmu dengan nama preview.mp4 di folder yang sama. -->
+      <video autoplay muted loop playsinline poster="banner.jpg">
+        <source src="preview.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+      <div class="creator"><span class="avatar">🎮</span> Condo_Games</div>
+    </div>
+    <div class="hero-copy">
+      <h1>Condo Games Private</h1>
+      <p class="sub">Pilih server favoritmu dan gabung sekarang.</p>
+    </div>
+  </section>
+
+  <div class="section-title"><h2>⬢ Private Servers</h2><span class="count">2 Servers • Demo</span></div>
+
+  <section class="server">
+    <div class="server-art"><div class="scene"></div><span class="status">✓ AVAILABLE</span></div>
+    <div class="server-info">
+      <h3>Server 01</h3>
+      <div class="online"><div class="avatars"><span>🤖</span><span>🧑🏻‍🎤</span><span>👾</span></div><span>14 / 20 Online</span></div>
+      <button class="join" data-server="1">JOIN SERVER</button>
+    </div>
+  </section>
+
+  <section class="server">
+    <div class="server-art art-two"><div class="scene"></div><span class="status">✓ AVAILABLE</span></div>
+    <div class="server-info">
+      <h3>Server 02</h3>
+      <div class="online"><div class="avatars"><span>🧑🏻</span><span>🐻</span></div><span>2 / 20 Online</span></div>
+      <button class="join" data-server="2">JOIN SERVER</button>
+    </div>
+  </section>
+  <p class="note">Tampilan demo. Ganti tautan server pada kode sebelum dipublikasikan. Jangan meminta password atau kode login Roblox di halaman ini.</p>
+</main>
+<script>
+/* Ganti kedua URL di bawah dengan tautan game/server yang memang kamu kelola. */
+const serverLinks = {
+  1: "https://www.roblox.com/games/",
+  2: "https://www.roblox.com/games/"
+};
+document.querySelectorAll("[data-server]").forEach(button => {
+  button.addEventListener("click", () => {
+    const id = button.dataset.server;
+    window.location.href = serverLinks[id];
+  });
+});
+</script>
+</body>
+</html>
